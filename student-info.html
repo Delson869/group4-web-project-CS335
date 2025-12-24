@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information - CS335 Group Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .page-description {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid #3498db;
+        }
+        
+        .page-description h2 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+        }
+        
+        .page-description p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .info-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #3498db;
+            font-size: 1.5rem;
+        }
+        
+        .student-list {
+            list-style-type: none;
+        }
+        
+        .student-list li {
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: background-color 0.2s;
+        }
+        
+        .student-list li:hover {
+            background-color: #e9f7fe;
+        }
+        
+        .contact-info {
+            background-color: #f0f8ff;
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .contact-info li {
+            border-left-color: #2ecc71;
+        }
+        
+        .highlight {
+            background-color: #fff8e1;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border: 2px dashed #f1c40f;
+        }
+        
+        .highlight h3 {
+            color: #e67e22;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Student Information Page</h1>
+            <p class="subtitle">Comprehensive student data and academic resources for CS335 Software Engineering</p>
+        </header>
+        
+        <section class="page-description">
+            <h2>About This Page</h2>
+            <p>This page serves as the central hub for student information in our CS335 Group 4 project. Here you'll find class rosters, contact details, academic information, and resources for enrolled students.</p>
+        </section>
+        
+        <div class="content-grid">
+            <div class="info-card">
+                <h3>👥 Students list - Group 4</h3>
+                <ul class="student-list">
+                    <li><strong>Delson Thobias</strong> - Computer Engineering and IT</li>
+                    <li><strong>Aloysius Modestus</strong> - Computer Science</li>
+                    <li><strong>Gelas Mallya</strong> - Computer Engineering and IT</li>
+                    <li><strong>Benson Godfrey</strong> - Computer Science</li>
+                    <li><strong>Benedictor Laurian</strong> - Computer Engineering and IT</li>
+                    <li><strong>Gladness Ambrose</strong> - Computer Engineering and IT</li>
+                    <li><strong>Michael Mandi</strong> - Computer Science</li>
+                    <li><strong>Timothy Kilima</strong> - Computer Science</li>
+                    <li><strong>Karen Kondo</strong> - Computer Science</li>
+                    <li><strong>Wakuru Bisembo</strong> - Computer Science</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>📋 Course Enrollment</h3>
+                <ul class="student-list">
+                    <li><strong>CS335:</strong> Web Technologies - 28 students</li>
+                    <li><strong>CS301:</strong> Data Structures - 32 students</li>
+                    <li><strong>CS315:</strong> Database Systems - 26 students</li>
+                    <li><strong>CS401:</strong> Software Engineering - 24 students</li>
+                    <li><strong>CS340:</strong> Mobile Development - 20 students</li>
+                </ul>
+            </div>
+            
+            <div class="info-card contact-info">
+                <h3>📞 Contact Information</h3>
+                <ul class="student-list">
+                    <li><strong>Academic Advisor:</strong> Dr. Susan John - susan.john@university.edu</li>
+                    <li><strong>Course Instructor:</strong> Prof. Robert Kim - r.kim@university.edu</li>
+                    <li><strong>Department Office:</strong> (255) 757-456678</li>
+                    <li><strong>IT Support:</strong> helpdesk@university.edu</li>
+                    <li><strong>Student Services:</strong> studentservices@university.edu</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>📅 Important Dates</h3>
+                <ul class="student-list">
+                    <li><strong>Mar 15:</strong> Midterm Exam Submission</li>
+                    <li><strong>Mar 22:</strong> Group Project Phase 2 Due</li>
+                    <li><strong>Apr 5:</strong> Web Technologies Lab</li>
+                    <li><strong>Apr 12:</strong> Final Project Proposal</li>
+                    <li><strong>May 3:</strong> Final Exam Week</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="highlight">
+            <h3>💡 Student Resources</h3>
+            <p>Access additional resources through the university portal:</p>
+            <ul class="student-list">
+                <li><strong>Learning Management System:</strong> lms.university.edu/cs335</li>
+                <li><strong>Code Repository:</strong> github.com/university-cs335</li>
+                <li><strong>Online Library:</strong> library.university.edu/digital</li>
+                <li><strong>Career Services:</strong> careers.university.edu/tech</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>CS335 Web Technologies Group Project | Student Information Page</p>
+            <p>This page is part of the collaborative web development project for Group 4</p>
+        </footer>
+    </div>
+</body>
+</html>
