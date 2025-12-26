@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Timetable</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #f1f5f9;
+            --border: #d1d5db;
+            --text: #111827;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 30px;
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        /* Editable Heading */
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h1 {
+            color: var(--primary);
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .title p {
+            color: #475569;
+            font-size: 15px;
+        }
+
+        /* Section headings */
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: var(--secondary);
+            border-left: 6px solid var(--secondary);
+            padding-left: 12px;
+            font-size: 22px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+        }
+
+        thead {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--accent);
+        }
+
+        tbody tr:hover {
+            background-color: #e0e7ff;
+            transition: 0.2s;
+        }
+
+        th {
+            font-weight: 600;
+        }
+
+        /* Course type labels */
+        .core {
+            color: #040ab6;
+            background-color: #0afb6a;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .elective {
+            color: #f60404;
+            background-color: #ffedd5;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        /* Footer note */
+        .note {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .title h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Editable Heading -->
+    <div class="title">
+        <h1>First Semester Timetable 
+            <br>Class    CEIT-3 </br> </h1>
+        <p>Academic Year 2025 / 2026</p>
+    </div>
+
+    <!-- Timetable Section -->
+    <h2>Class Timetable</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Course</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>08:00 AM</td>
+                <td>10:00 AM</td>
+                <td>Principles of Database systems (Lecture)</td>
+                <td>D 01 Hall</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:30 AM</td>
+                <td>12:30 PM</td>
+                <td>Micro computer (Lecture)</td>
+                <td>B 302</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>09:00 AM</td>
+                <td>11:00 AM</td>
+                <td>Mobile application development (Lecture)</td>
+                <td>D 01 Hall</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>01:00 PM</td>
+                <td>03:00 PM</td>
+                <td>Software Engineering (Lecture)</td>
+                <td>B 302</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>10:00 AM</td>
+                <td>11:00 AM</td>
+                <td>Software Engineering (Practical)</td>
+                <td>B 106 Lab </td>
+            </tr>
+             <tr>
+                <td>Friday</td>
+                <td>01:00 PM</td>
+                <td>03:00 PM</td>
+                <td>Principles of operating Systems (Lecture)</td>
+                <td>D 01 Hall</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Course Type Section -->
+    <h2>Course Classification</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>IS 264</td>
+                <td>Principles of Database systems</td>
+                <td><span class="core">Core</span></td>
+            </tr>
+            <tr>
+                <td>CS 350</td>
+                <td>Micro computer</td>
+                <td><span class="core">Core</span></td>
+            </tr>
+            <tr>
+                <td>IS 238</td>
+                <td>Mobile application development</td>
+                <td><span class="elective">Elective</span></td>
+            </tr>
+            <tr>
+                <td>CS 334</td>
+                <td>Principles of operating Systems</td>
+                <td><span class="core">Core</span></td>
+            </tr>
+             <tr>
+                <td>CS 335</td>
+                <td>Software Engineering</td>
+                <td><span class="core">core</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+                           © 2025 Class Management Web App.
+    </div>
+
+</div>
+
+</body>
+</html>
