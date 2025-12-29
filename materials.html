@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f2f5f9;
+            color: #333;
+        }
+
+        /* ===== HEADER / HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* ===== COURSES SECTION ===== */
+        .courses {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* ===== COURSE CARD ===== */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1e88e5;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #1565c0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 18px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Learning Center</h1>
+        <p>Upgrade your skills with structured and interactive learning</p>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h2>Web Development</h2>
+            <p>
+                Learn how to design and develop modern websites using
+                HTML, CSS, and JavaScript.
+            </p>
+            <button>Start Course</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐍</div>
+            <h2>Programming Basics</h2>
+            <p>
+                Understand programming fundamentals using Python
+                and problem-solving techniques.
+            </p>
+            <button>Start Course</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">🗄️</div>
+            <h2>Database Systems</h2>
+            <p>
+                Learn how to design, manage, and query databases
+                using SQL and relational models.
+            </p>
+            <button>Start Course</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h2>Cyber Security</h2>
+            <p>
+                Understand the
